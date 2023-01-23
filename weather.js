@@ -26,6 +26,9 @@ const processResult = (result) => {
 
 const createForm = () => {
     const content = document.getElementById('content');
+    const h1 = document.createElement('h1');
+    h1.textContent = "Odin Weather Data App";
+    content.appendChild(h1)
 
     const form = document.createElement('form');
     form.id = 'weatherForm';
@@ -37,7 +40,6 @@ const createForm = () => {
     button.textContent = "Search";
     button.addEventListener('click', (e) => {
         e.preventDefault();
-        console.log(e.target.form[0].value);
         getWeather(e.target.form[0].value).then((data) => {
             displayWeather(data);
         })
@@ -62,6 +64,3 @@ const displayWeather = (data) => {
 } 
 
 createForm();
-//data = getWeather("london");
-//displayWeather(data);
-

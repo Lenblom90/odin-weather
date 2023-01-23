@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: no-repeat top/100% url("./hurricane.jpg");
+}
+
+#content {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#weatherForm {
+    padding: 20px;
+    display: flex;
+    width: 350px;
+    flex: auto;
+    gap: 10px;
+    align-items: center;
+    background-color: rgba(0,100,255,0.5);
+    color: white;
+}
+
+#weatherForm button {
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+
+#weatherForm input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.weather-data {
+    padding: 20px 5px;
+    background-color: rgba(0,100,255,0.5);
+    color: white;
+}
+
+img {
+    position: absolute;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.3;
+}
