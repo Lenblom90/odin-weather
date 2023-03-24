@@ -39,7 +39,7 @@ body {
 }
 
 .weather-data {
-    padding: 20px 5px;
+    padding: 20px    5px;
     background-color: rgba(0,100,255,0.5);
     color: white;
 }
